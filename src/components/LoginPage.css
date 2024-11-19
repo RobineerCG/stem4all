@@ -1,0 +1,95 @@
+/* src/components/LoginPage.css */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4F6F7; /* Fondo gris claro */
+}
+
+.login-form-container {
+    background-color: #34495E; /* Fondo oscuro para el formulario */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #ECF0F1; /* Texto en blanco para mayor contraste */
+    text-align: center;
+}
+
+.login-form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ECF0F1; /* Aseguramos que el título sea blanco */
+}
+
+.login-form-container p {
+    font-size: 1rem;
+    color: #ECF0F1; /* Texto blanco */
+    margin-bottom: 20px;
+}
+
+.login-form-container p span {
+    color: #9b59b6; /* Púrpura brillante para destacar enlaces */
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #ECF0F1; /* Blanco para los labels */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #7F8C8D; /* Gris oscuro */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #34495E; /* Texto oscuro dentro del campo */
+    background-color: #ECF0F1; /* Fondo blanco claro para contraste */
+}
+
+.form-group input::placeholder {
+    color: #7F8C8D; /* Gris claro para el texto del placeholder */
+}
+
+.login-button {
+    width: 100%;
+    background-color: #9b59b6; /* Púrpura */
+    color: #ECF0F1; /* Blanco */
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #8e44ad; /* Un tono más oscuro de púrpura */
+}
+
+.login-links {
+    margin-top: 20px;
+}
+
+.login-links a {
+    color: #3498DB; /* Azul Claro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}

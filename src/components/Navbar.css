@@ -1,0 +1,135 @@
+/* src/components/Navbar.css */
+
+/* Fondo de la barra de navegación en Azul Marino */
+.navbar {
+    position: fixed;         /* Fija la barra de navegación en la parte superior */
+    top: 0;                  /* Alinea la barra al borde superior */
+    left: 0;
+    width: 100%;             /* Asegura que ocupe todo el ancho de la ventana */
+    z-index: 1000;           /* Asegura que quede por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #2C3E50; /* Azul Marino */
+}
+
+/* Estilo para el logo/texto de la Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ECF0F1; /* Blanco */
+    margin-right: auto;
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Colores y diseño para los enlaces en la Navbar */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.navbar-item {
+    font-size: 1rem;
+    color: #ECF0F1; /* Blanco */
+    cursor: pointer;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ECF0F1; /* Blanco */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    z-index: 1000;
+}
+
+/* Secciones del menú desplegable */
+.dropdown-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.dropdown-section h4 {
+    font-size: 1rem;
+    margin: 0 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent; /* Línea */
+}
+
+/* Colores específicos para "Física" y "Química" */
+.dropdown-section.physics h4 {
+    color: #3498DB; /* Azul Claro */
+    border-color: #3498DB; /* Línea en Azul Claro */
+}
+
+.dropdown-section.chemistry h4 {
+    color: #2ECC71; /* Verde */
+    border-color: #2ECC71; /* Línea en Verde */
+}
+
+.dropdown-section.electricity h4 {
+    color: #cc2006; /* Verde */
+    border-color: #cc2006; /* Línea en Verde */
+}
+
+.dropdown-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-section li {
+    margin: 5px 0;
+    color: #7F8C8D; /* Gris Oscuro para texto secundario */
+    cursor: pointer;
+}
+
+.dropdown-section li:hover {
+    text-decoration: underline;
+    color: #2C3E50; /* Azul Marino en hover */
+}
+
+/* Estilo de botón "Identifícate" con Azul Claro */
+.navbar-button {
+    background-color: #3498DB; /* Azul Claro */
+    color: #ECF0F1; /* Blanco */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+}
+
+.navbar-button:hover {
+    background-color: #2ECC71; /* Verde en hover */
+}
+
+/* Estilo para eliminar subrayado y color azul de los enlaces */
+.navbar-links a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #ECF0F1; /* Blanco */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Transición para hover */
+}
+
+/* Color al pasar el mouse por encima */
+.navbar-links a:hover {
+    color: #2ECC71; /* Verde */
+}

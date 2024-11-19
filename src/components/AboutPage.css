@@ -1,0 +1,181 @@
+/* src/components/AboutPage.css */
+
+/* Estructura general */
+.about-page {
+    font-family: Arial, sans-serif;
+}
+
+/* Sección hero (con overlay azul en la imagen de fondo) */
+.about-hero {
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.about-hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Sección amarilla */
+.about-intro {
+    background-color: #fdf6e3; /* Amarillo claro */
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2c3e50; /* Azul Marino */
+}
+
+/* Sección de colaboración */
+.institutions-section {
+    background-color: #fdf6e3;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.institutions-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.institutions-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.institutions-logos .logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+.institutions-logos img {
+    width: 120px; /* Tamaño uniforme para los logos */
+    height: 120px; /* Ajuste del círculo */
+    border-radius: 50%; /* Hace que sean círculos */
+    background-color: #fff; /* Fondo blanco del círculo */
+    padding: 10px; /* Espacio interno para mejorar la proporción */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    object-fit: contain; /* Asegura que el logo se ajuste sin recortarse */
+}
+
+.institutions-logos .logo-name {
+    font-size: 1rem;
+    color: #2c3e50; /* Azul Marino */
+    font-weight: bold;
+}
+
+.institutions-logos img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Incrementa la sombra */
+}
+
+
+
+/* Información de las instituciones */
+.institutions-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+/* Sección adicional */
+.about-extra {
+    background-color: #fdf6e3;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-extra h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-extra p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Sección de Misión y Visión */
+.mission-vision-section {
+    background-color: #fdf6e3; /* Amarillo claro */
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2c3e50; /* Azul Marino */
+}
+
+.mission-vision-section h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.mission-vision-section p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.6;
+}
+
+
+
+/* TEXTO */
+
+.info-card p {
+    color: #7f8c8d;
+    font-size: 1rem;
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.6; /* Mejora el espaciado entre líneas */
+}
+
+/* Estilo para los enlaces en los logos */
+.institutions-logos a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #2C3E50; /* Azul Marino */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave en hover */
+}
+
+.institutions-logos a:hover {
+    color: #3498DB; /* Azul claro al pasar el mouse */
+}
+
+

@@ -1,0 +1,89 @@
+/* src/components/Footer.css */
+
+/* Sección general del footer (sin cambios) */
+.footer {
+    background-color: #2C3E50; /* Azul Marino */
+    color: #ECF0F1; /* Blanco */
+    padding: 20px 40px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que las columnas se adapten a pantallas pequeñas */
+    gap: 20px;
+}
+
+/* Estilo de las columnas */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    text-align: center; /* Centra el contenido */
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #3498DB; /* Azul Claro */
+    border-bottom: 2px solid #3498DB; /* Línea decorativa */
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+    cursor: pointer;
+    color: #ECF0F1; /* Blanco */
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li:hover {
+    color: #2ECC71; /* Verde en hover */
+}
+
+/* Enlaces sociales */
+.social-links {
+    display: flex;
+    justify-content: center; /* Centra los íconos */
+    gap: 30px; /* Mayor espacio entre íconos */
+    margin-top: 20px; /* Separación respecto al título */
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: #ECF0F1; /* Blanco */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Hace los íconos redondos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2); /* Agranda los íconos al pasar el mouse */
+}
+
+/* Enlaces en el footer sin subrayado */
+.footer a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #ECF0F1; /* Blanco */
+    transition: color 0.3s ease; /* Animación suave en hover */
+}
+
+.footer a:hover {
+    color: #3498DB; /* Azul claro en hover */
+}
+

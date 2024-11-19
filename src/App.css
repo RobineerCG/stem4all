@@ -1,0 +1,23 @@
+/* src/App.css */
+
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2C3E50; /* Azul Marino */
+  color: #ECF0F1; /* Blanco */
+}
+
+.App {
+  text-align: center;
+}
+
+/* Ajusta el espaciado del contenido principal para evitar el solapamiento del Navbar */
+.main-content {
+  padding-top: 60px; /* La altura del Navbar */
+}
+
+/* Estilo para la sección de bienvenida */
+.welcome-section {
+  padding: 40px;
+}
