@@ -1,7 +1,9 @@
-// src/components/Navbar.js
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom'; // Importamos Link para navegación
+import logoUPIITA from '../assets/logos/upiita-logo.png'; // Ruta correcta del logo de UPIITA
+import logoIPN from '../assets/logos/ipn-logo.PNG'; // Ruta correcta del logo del IPN
+import logoSTEM4ALL from '../assets/logos/stem4all-logo.png'; // Ruta correcta del logo de STEM4ALL
 
 function Navbar() {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -11,8 +13,19 @@ function Navbar() {
 
     return (
         <nav className="navbar">
-            <Link to="/" className="navbar-brand">STEM4ALL</Link>
-            
+            {/* Logos con enlaces */}
+            <div className="navbar-logos">
+                <a href="https://upiita.ipn.mx" target="_blank" rel="noopener noreferrer">
+                    <img src={logoUPIITA} alt="Logo UPIITA" className="navbar-logo" />
+                </a>
+                <a href="https://www.ipn.mx" target="_blank" rel="noopener noreferrer">
+                    <img src={logoIPN} alt="Logo IPN" className="navbar-logo" />
+                </a>
+                <a href="https://stem4all.org" target="_blank" rel="noopener noreferrer">
+                    <img src={logoSTEM4ALL} alt="Logo STEM4ALL" className="navbar-logo" />
+                </a>
+            </div>
+
             <ul className="navbar-links">
                 <li 
                     className="navbar-item dropdown" 
@@ -52,7 +65,6 @@ function Navbar() {
                         </div>
                     )}
                 </li>
-                {/* Agregamos hash links para las secciones */}
                 <li className="navbar-item">
                     <Link to="/about#collaboration">Instituciones</Link>
                 </li>

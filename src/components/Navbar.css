@@ -133,3 +133,17 @@
 .navbar-links a:hover {
     color: #2ECC71; /* Verde */
 }
+.navbar-logos {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Aumenta la separación entre los logos */
+}
+
+.navbar-logo {
+    height: 40px; /* Tamaño ajustado */
+    width: auto;
+    display: block;
+}
+
+
+
